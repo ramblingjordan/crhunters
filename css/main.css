@@ -1,89 +1,63 @@
-body {background: #1b1b1b}
+:root {
+  --bg-color: 27, 27, 27;
+  --font-color: 255, 255, 255;
+}
+
+body {
+  background-color: rgb(var(--bg-color));
+  font-family: Arial, sans-serif;
+  color: rgb(var(--font-color));
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 #top-half-outer {
-    margin-top: 0px;
-    margin: 0 auto;
-    padding: 48px 0 24px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 .top-half-inner {
-  flex-shrink: 1;
-  flex: 1;
-  position: relative;
+  flex: 1 1;
 }
 
-.top-half-inner img {max-width: 100%}
+.top-half-inner img {
+  max-width: 100%
+}
 
 .top-half-inner iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 10px;
+  width: 100%;
+  height: 100%;
 }
 
-#top-half-link-group {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 10px 10px 0px 0px;
+#top-half-social-links {
+  flex-wrap: nowrap;
 }
 
-.top-half-link-item {margin: 0px 20px}
+.top-half-link-item {
+  border: 1em;
+}
 
 #bottom-half-outer {
-    width: 100%;
-    height: 100%;
-    background: url(assets/coin-background.jpg) center no-repeat scroll;
-    background-size: cover;
-}
-
-.main-navigation__title {
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, .75);
-    text-align: center;
-}
-
-.main-navigation__title h3 {
-    margin: 16px 0 24px;
-    padding: 0 16px;
-    display: inline-block;
-    border-bottom: 3px solid rgb(86, 152, 193);
-    color: #fff;
+  background: url(../assets/coin-background.jpg);
 }
 
 .bottom-half-inner {
-    margin: 0 auto;
-    padding: 24px 0 24px;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .bottom-half-item {
-    padding: 32px 16px 16px;
-    width: 250px;
-    background-color: rgba(0, 0, 0, .75);
-    border-radius: 5px;
-    text-align: center;
-    color: #fff;
+  background-color: rgba(var(--bg-color), .8);
+  border-radius: 1em;
+  text-align: center;
 }
 
 .bottom-half-item img {
-    max-width: 175px;
-    height: auto;
-}
-
-.bottom-half-item h3 {
-    margin: 16px 0;
+  max-width: 80%;
 }
 
 .bottom-half-item span {
-    margin: 0 0 16px;
-    display: inline-block;
-    font-size: 16px;
+  display: block;
 }
