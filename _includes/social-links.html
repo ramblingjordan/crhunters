@@ -1,0 +1,8 @@
+{% for social-link in site.data.social-links %}
+<div class='top-half-link-item'>
+  <a href='{{ social-link.url }}' target='_blank'>
+    <img alt='{{ social-link.name }}' src='assets/images/{{ social-link.img }}' />
+  </a>
+</div>
+{% endfor %}
+

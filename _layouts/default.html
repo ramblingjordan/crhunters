@@ -1,141 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>CRHunters</title>
-  <link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | relative_url }}">
-</head>
-
+{% include header.html %}
 <body>
-
-  <div id='top-half-outer' class='container'>
-
+  <div id='top-half-outer'>
     <div class='top-half-inner'>
-
       <div id='crhunters-logo'>
-        <a href='.'>
-          <img alt='CRHunters Logo' src='assets/crhunters-logo.png' />
-        </a>
+        <a href='.'><img alt='CRHunters Logo' src='assets/images/crhunters-logo.png' /></a>
       </div>
-
-      <div id='social-links' class='container'>
-
-        <!-- YouTube Link-->
-        <div class='top-half-link-item'>
-          <a href='https://www.youtube.com/channel/UCkwJQLB2fyY0PedoArLBwNQ' target='_blank'>
-            <img alt='YouTube Link' src='assets/youtube-logo.png' />
-          </a>
-        </div>
-
-        <!-- Facebook Link-->
-        <div class='top-half-link-item'>
-          <a href='https://www.facebook.com/CRHuntersLive' target='_blank'>
-            <img alt='Facebook Link' src='assets/facebook-logo.png' />
-          </a>
-        </div>
-
-        <!-- Reddit Link-->
-        <div class='top-half-link-item'>
-          <a href='https://www.reddit.com/r/CRHunters/' target='_blank'>
-            <img alt='Reddit Link' src='assets/reddit-logo.png' />
-          </a>
-        </div>
-
-        <!-- Twitter Link-->
-        <div class='top-half-link-item'>
-          <a href='https://twitter.com/CRHunters' target='_blank'>
-            <img alt='Twitter Link' src='assets/twitter-logo.png' />
-          </a>
-        </div>
-
-        <!-- Insta Link-->
-        <div class='top-half-link-item'>
-          <a href='https://www.instagram.com/CRHuntersLive/' target='_blank'>
-            <img alt='Instagram Link' src='assets/insta-logo.png' />
-          </a>
-        </div>
-      </div>
-
+      <div id='social-links'>{% include social-links.html %}</div>
     </div>
-
-    <div id='trailer-iframe' class='top-half-inner'>
-      <iframe allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
-        allowfullscreen='allowfullscreen' frameborder='0' src='https://www.youtube.com/embed/cqHNcfOQ_xI'></iframe>
-    </div>
-
+    <div class='top-half-inner'>{% include youtube-embed.html %}</div>
   </div>
 
-  <div id='bottom-half-outer' class='container'>
-
-    <div id='bottom-half-inner' class='container'>
-
-      <div id='clad-pack' class='bottom-half-item'>
-        <img alt='Clad Pack' src='assets/pack-icon.png' />
-        <h2>Clad Pack</h2>
-        <span>5 rolls of half dollars searched for you!</span>
-        <span>1 silver wall punch!</span>
-        <h2>$25</h2>
-        <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
-          <input name='cmd' type='hidden' value='_s-xclick' />
-          <input name='hosted_button_id' type='hidden' value='VCZ4QLDDLUTRG' />
-          <input alt='PayPal - The safer, easier way to pay online!' name='submit'
-            src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' type='image' />
-          <img alt='' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
-        </form>
-      </div>
-
-      <div id='kennedy-pack' class='bottom-half-item'>
-        <img alt='Kennedy Pack' src='assets/pack-icon.png' />
-        <h2>Kennedy Pack</h2>
-        <span>10 rolls of half dollars searched for you!</span>
-        <span>3 silver wall punches</span>
-        <h2>$50</h2>
-        <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
-          <input name='cmd' type='hidden' value='_s-xclick' />
-          <input name='hosted_button_id' type='hidden' value='556FUGTD7EKYW' />
-          <input alt='PayPal - The safer, easier way to pay online!' name='submit'
-            src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' type='image' />
-          <img alt='' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
-        </form>
-      </div>
-
-      <div id='franklin-pack' class='bottom-half-item'>
-        <img alt='Franklin Pack' src='assets/pack-icon.png' />
-        <h2>Franklin Pack</h2>
-        <span>20 rolls of half dollars searched for you!</span>
-        <span>7 silver wall punches!</span>
-        <h2>$100</h2>
-        <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
-          <input name='cmd' type='hidden' value='_s-xclick' />
-          <input name='hosted_button_id' type='hidden' value='BBTTECSG9TQHC' />
-          <input alt='PayPal - The safer, easier way to pay online!' name='submit'
-            src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' type='image' />
-          <img alt='' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
-        </form>
-      </div>
-
-      <div id='liberty-pack' class='bottom-half-item'>
-        <img alt='About Us' src='assets/pack-icon.png' />
-        <h2>Liberty Pack</h2>
-        <span>A full case of 50 rolls searched for you!</span>
-        <span>20 silver wall punches!</span>
-        <h2>$250</h2>
-        <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
-          <input name='cmd' type='hidden' value='_s-xclick' />
-          <input name='hosted_button_id' type='hidden' value='BJ2PFA9LWQ27N' />
-          <input alt='PayPal - The safer, easier way to pay online!' name='submit'
-            src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' type='image' />
-          <img alt='' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
-        </form>
-      </div>
-
-    </div>
-
-  </div>
+  {{ content }}
 
 </body>
-<footer>
-  &copy; CRHunters LLC {{ site.time | date: '%Y' }}. All rights reserved.
-</footer>
+{% include footer.html %}
 </html>
+

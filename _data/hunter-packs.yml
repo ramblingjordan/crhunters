@@ -1,0 +1,24 @@
+- name: Clad Pack
+  img: pack-icon.png
+  description: 5 rolls of half dollars searched for you and 1 silver wall punch!
+  price: 25
+  paypal-id: VCZ4QLDDLUTRG
+
+- name: Kennedy Pack
+  img: pack-icon.png
+  description: 10 rolls of half dollars searched for you and 3 silver wall punch!
+  price: 50
+  paypal-id: 556FUGTD7EKYW
+
+- name: Franklin Pack
+  img: pack-icon.png
+  description: 20 rolls of half dollars searched for you and 7 silver wall punch!
+  price: 100
+  paypal-id: BBTTECSG9TQHC
+
+- name: Liberty Pack
+  img: pack-icon.png
+  description: A full case of 50 rolls searched for you and a whopping 20 silver wall punches!
+  price: 250
+  paypal-id: BJ2PFA9LWQ27N
+

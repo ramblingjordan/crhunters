@@ -3,37 +3,42 @@
 
 $bg-color: rgb(27, 27, 27);
 $font-color: rgb(255, 255, 255);
+$font-family: Arial, sans-serif;
 
-body {
-  background-color: $bg-color;
-  font-family: Arial, sans-serif;
-  color: $font-color;
-}
-
-.container {
+%container {
   display: flex;
   flex-wrap: wrap;
 }
 
+body {
+  background-color: $bg-color;
+  font-family: $font-family;
+  color: $font-color;
+  text-align: center;
+}
+
 #top-half-outer {
-  flex-wrap: wrap;
+  @extend %container;
 }
 
 .top-half-inner {
   flex: 1 1;
-}
-
-.top-half-inner img {
-  max-width: 100%
-}
-
-.top-half-inner iframe {
-  width: 100%;
-  height: 100%;
+  img {
+    max-width: 100%  
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #social-links {
-  flex-wrap: nowrap;
+  @extend %container;
+  flex-basis: 20%;
+  justify-content: space-around;
+  img {
+    max-width: 5em;
+  }
 }
 
 .top-half-link-item {
@@ -41,26 +46,21 @@ body {
 }
 
 #bottom-half-outer {
-  background: url(../coin-background.jpg);
+  background: url(../images/coin-background.jpg);
 }
 
 #bottom-half-inner {
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend %container;
+  justify-content: space-around;
 }
 
-.bottom-half-item {
+.hunter-pack {
   background-color: rgba($bg-color, .9);
   border-radius: 1em;
-  text-align: center;
-}
-
-.bottom-half-item img {
-  max-width: 80%;
-}
-
-.bottom-half-item span {
-  display: block;
+  max-width: 20em;
+  img {
+    max-width: 80%;
+  }
 }
 
 footer {

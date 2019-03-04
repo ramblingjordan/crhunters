@@ -1,0 +1,19 @@
+- name: YouTube
+  url: https://www.youtube.com/channel/UCkwJQLB2fyY0PedoArLBwNQ
+  img: social-icons/youtube-logo.png
+
+- name: Facebook
+  url: https://www.facebook.com/CRHuntersLive
+  img: social-icons/facebook-logo.png
+  
+- name: Reddit
+  url: https://www.reddit.com/r/CRHunters
+  img: social-icons/reddit-logo.png
+
+- name: Twitter
+  url: https://twitter.com/CRHunters
+  img: social-icons/twitter-logo.png
+
+- name: Instagram
+  url: https://www.instagram.com/CRHuntersLive
+  img: social-icons/insta-logo.png
