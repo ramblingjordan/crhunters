@@ -10,11 +10,14 @@ $font-family: Arial, sans-serif;
   flex-wrap: wrap;
 }
 
+html {
+  text-align: center;
+}
+
 body {
   background-color: $bg-color;
   font-family: $font-family;
   color: $font-color;
-  text-align: center;
 }
 
 #top-half-outer {
@@ -61,8 +64,4 @@ body {
   img {
     max-width: 80%;
   }
-}
-
-footer {
-  text-align: center;
 }
