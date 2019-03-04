@@ -31,7 +31,7 @@ body {
   height: 100%;
 }
 
-#top-half-social-links {
+#social-links {
   flex-wrap: nowrap;
 }
 
@@ -43,7 +43,7 @@ body {
   background: url(../assets/coin-background.jpg);
 }
 
-.bottom-half-inner {
+#bottom-half-inner {
   flex-wrap: wrap;
   justify-content: center;
 }
