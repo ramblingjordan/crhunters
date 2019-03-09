@@ -2,20 +2,25 @@
 <!DOCTYPE html>
 <html>
 {% include header.html %}
+
 <body>
-  <div id='top-half-outer'>
-    <div class='top-half-inner'>
-      <div id='crhunters-logo'>
-        <a href='.'><img alt='CRHunters Logo' src='assets/images/crhunters-logo.png' /></a>
+  <div id='wrapper'>
+    <div id='top-half-outer'>
+      <div class='top-half-inner'>
+        <div id='crhunters-logo'>
+          <a href='.'><img alt='CRHunters Logo' src='assets/images/crhunters-logo.png' /></a>
+        </div>
+        <div id='social-links'>{% include social-links.html %}</div>
       </div>
-      <div id='social-links'>{% include social-links.html %}</div>
+      <div class='top-half-inner'>{% include youtube-embed.html %}</div>
     </div>
-    <div class='top-half-inner'>{% include youtube-embed.html %}</div>
+    <div id='bottom-half-outer'>
+      <div id='bottom-half-inner'>
+        {{ content }}
+      </div>
+    </div>
   </div>
-
-  {{ content }}
-
 </body>
 {% include footer.html %}
-</html>
 
+</html>

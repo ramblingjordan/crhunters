@@ -7,10 +7,9 @@
   <form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
     <input name='cmd' type='hidden' value='_s-xclick' />
     <input name='hosted_button_id' type='hidden' value='{{ hunter-pack.paypal-id }}' />
-    <input alt='PayPal - The safer, easier way to pay online!' name='submit'
-      src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' type='image' />
+    <input alt='PayPal link' name='submit' src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif'
+      type='image' />
     <img alt='' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
   </form>
 </div>
 {% endfor %}
-

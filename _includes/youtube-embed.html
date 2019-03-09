@@ -1,12 +1,17 @@
-<iframe 
-  allow='
-    accelerometer;
-    autoplay;
-    encrypted-media;
-    gyroscope;
-    picture-in-picture'
-  allowfullscreen='allowfullscreen'
-  frameborder='0'
-  src='https://www.youtube.com/embed/cqHNcfOQ_xI'>
-</iframe>
+<div id="player"></div>
 
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '390',
+      width: '640',
+      videoId: 'cqHNcfOQ_xI'
+    });
+  }
+</script>

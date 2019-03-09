@@ -7,17 +7,36 @@ $font-family: Arial, sans-serif;
 
 %container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+%full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+%max-width {
+  max-width: 1200px;
+  margin: auto;
 }
 
 html {
-  text-align: center;
+  font-family: $font-family;
+  color: $font-color;
 }
 
 body {
-  background-color: $bg-color;
-  font-family: $font-family;
-  color: $font-color;
+  text-align: center;
+  background: $bg-color;
+}
+
+#wrapper {
+  @extend %max-width;
+  margin: 5px auto;
 }
 
 #top-half-outer {
@@ -27,7 +46,7 @@ body {
 .top-half-inner {
   flex: 1 1;
   img {
-    max-width: 100%  
+    max-width: 100%
   }
   iframe {
     width: 100%;
@@ -49,10 +68,12 @@ body {
 }
 
 #bottom-half-outer {
+  @extend %full-width;
   background: url(../images/coin-background.jpg);
 }
 
 #bottom-half-inner {
+  @extend %max-width;
   @extend %container;
   justify-content: space-around;
 }
@@ -60,8 +81,11 @@ body {
 .hunter-pack {
   background-color: rgba($bg-color, .9);
   border-radius: 1em;
+  min-width: 12em;
   max-width: 20em;
   img {
     max-width: 80%;
   }
+  margin: .75em;
+  padding: .5em;
 }
