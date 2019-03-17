@@ -5,10 +5,6 @@
 - name: Facebook
   url: https://www.facebook.com/CRHuntersLive
   img: social-icons/facebook-logo.png
-  
-- name: Reddit
-  url: https://www.reddit.com/r/CRHunters
-  img: social-icons/reddit-logo.png
 
 - name: Twitter
   url: https://twitter.com/CRHunters

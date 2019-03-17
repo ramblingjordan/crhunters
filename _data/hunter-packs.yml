@@ -1,24 +1,36 @@
-- name: Clad Pack
+clad:
+  name: Clad Pack
   img: pack-icon.png
-  description: 5 rolls of half dollars searched for you and 1 silver wall punch!
+  description: Join the hunt! Get involved at our entry level.
+  rolls: 5
+  punches: 1
   price: 25
   paypal-id: VCZ4QLDDLUTRG
 
-- name: Kennedy Pack
+kennedy:
+  name: Kennedy Pack
   img: pack-icon.png
-  description: 10 rolls of half dollars searched for you and 3 silver wall punches!
+  description: Multiple guaranteed silver coins!
+  rolls: 10
+  punches: 3
   price: 50
   paypal-id: 556FUGTD7EKYW
 
-- name: Franklin Pack
+franklin:
+  name: Franklin Pack
   img: pack-icon.png
-  description: 20 rolls of half dollars searched for you and 7 silver wall punches!
+  description: Make a major dent in the Silver Wall!
+  rolls: 20
+  punches: 7
   price: 100
   paypal-id: BBTTECSG9TQHC
 
-- name: Liberty Pack
+liberty:
+  name: Liberty Pack
   img: pack-icon.png
-  description: A full case of 50 rolls searched for you and a whopping 20 silver wall punches!
+  description: You are Legend! Best value and guaranteed mega silver!
+  rolls: 50
+  punches: 20
   price: 250
   paypal-id: BJ2PFA9LWQ27N
 

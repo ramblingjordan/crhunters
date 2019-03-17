@@ -1,0 +1,23 @@
+{% assign hunter-pack = site.data.hunter-packs[include.pack] %}
+
+<div class='hunter-pack'>
+  <div class='pack-image'>
+    <img alt='{{ hunter-pack.name }}' src='assets/images/{{ hunter-pack.img }}' />
+  </div>
+
+  <div class='pack-name'>{{ hunter-pack.name }}</div>
+
+  <div class='pack-description'>{{ hunter-pack.description }}</div>
+
+  <div class='pack-reward'><strong>{{ hunter-pack.rolls }}</strong><br />Roll Treasure Hunt!</div>
+
+  <div class='pack-reward'>
+    <strong>{{ hunter-pack.punches }}</strong><br />
+    Silver Wall Punch{% if hunter-pack.punches > 1 %}es{% endif %}!
+  </div>
+
+  <div class='pack-price'>${{ hunter-pack.price }}</div>
+
+  <div class='donate-button'> {% include paypal-form.html paypal-id = hunter-pack.paypal-id %} </div>
+
+</div>
