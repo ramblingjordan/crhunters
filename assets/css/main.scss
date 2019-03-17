@@ -1,15 +1,6 @@
 ---
 ---
 
-$bg-color: rgb(27, 27, 27);
-$font-color: rgb(255, 255, 255);
-$font-family: Arial, sans-serif;
-
-%container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
 %full-width {
   width: 100vw;
   position: relative;
@@ -25,13 +16,13 @@ $font-family: Arial, sans-serif;
 }
 
 html {
-  font-family: $font-family;
-  color: $font-color;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 body {
   text-align: center;
-  background: $bg-color;
+  background: rgb(27, 27, 27);
 }
 
 #wrapper {
@@ -40,7 +31,8 @@ body {
 }
 
 #top-half-outer {
-  @extend %container;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .top-half-inner {
@@ -55,7 +47,8 @@ body {
 }
 
 #social-links {
-  @extend %container;
+  display: flex;
+  flex-wrap: nowrap;
   flex-basis: 20%;
   justify-content: space-around;
   img {
@@ -69,23 +62,41 @@ body {
 
 #bottom-half-outer {
   @extend %full-width;
-  background: url(../images/coin-background.jpg);
+  background-image: url(../images/coin-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment:  scroll;
 }
 
 #bottom-half-inner {
   @extend %max-width;
-  @extend %container;
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.hunter-pack-outer {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 .5em;
+  &:first-child { padding-left: 0 }
+  &:last-child { padding-right: 0 }
 }
 
 .hunter-pack {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   background-color: rgba($bg-color, .9);
   border-radius: 1em;
-  min-width: 12em;
+  min-width: 8em;
   max-width: 20em;
   img {
-    max-width: 80%;
+    max-height: 100%;
+    max-width: 100%;
   }
-  margin: .75em;
-  padding: .5em;
+  padding: 1.5em;
+  display: flex;
+
 }
